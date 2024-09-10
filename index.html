@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>hello</title>
-  </head>
-  <body>
-    <h1>welcome</h1>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Trip</title>
+<script>
+    
+var init = function(){
+    document.getElementById("ifr_exe").style.height = (document.documentElement.clientHeight/2) + 'px';    
+    document.getElementById("ifr_map").style.height = (document.documentElement.clientHeight/2) + 'px';    
+}
+var setSize = function(_this){
+    console.log("[setSize]"+_this);
+    
+}
+
+</script>
+</head>
+<body onload="init();">
+<iframe id="ifr_exe" width="100%" scrolling="no" onload="setSize(this)" src="https://docs.google.com/spreadsheets/d/1q7te2fpjptLiPykQb5fsxORRgz9G0Jwq32uLMTIJq48/edit?gid=396103710#gid=396103710"></iframe>
+<iframe id="ifr_map" width="100%" scrolling="no" onload="setSize(this)" src="https://www.google.com/maps/d/edit?mid=1G4K0f0SJ9_93ZypAUIzE-6sRulHcWq4&usp=sharing"></iframe>
+</body>
 </html>
