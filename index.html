@@ -7,14 +7,14 @@
 <script>
     
 var init = function(){
-    document.getElementById("ifr_exe").style.height = (document.documentElement.clientHeight/5)*2 + 'px';    
-    document.getElementById("ifr_map").style.height = (document.documentElement.clientHeight/5)*3 + 'px';    
+    document.getElementById("div_exe").style.height = (document.documentElement.clientHeight/10)*4 + 'px';    
+    document.getElementById("div_map").style.height = (document.documentElement.clientHeight/10)*6 + 'px';    
 }
 
 </script>
 </head>
-<body onload="init();">
-<iframe id="ifr_exe" width="100%" frameborder="0" src="https://docs.google.com/spreadsheets/d/1q7te2fpjptLiPykQb5fsxORRgz9G0Jwq32uLMTIJq48/edit?gid=396103710#gid=396103710"></iframe>
-<iframe id="ifr_map" width="100%" frameborder="0" src="https://www.google.com/maps/d/embed?mid=1G4K0f0SJ9_93ZypAUIzE-6sRulHcWq4&ehbc=2E312F"></iframe>
+<body onload="init();" style="margin:0px;padding:0px;overflow:hidden">
+<div id="div_exe"><iframe id="ifr_exe" style="height:110%;width:100%;" frameborder="0" src="https://docs.google.com/spreadsheets/d/1q7te2fpjptLiPykQb5fsxORRgz9G0Jwq32uLMTIJq48/edit?gid=396103710#gid=396103710"></iframe></div>
+<div id="div_map"><iframe id="ifr_map" style="height:100%;width:100%;" frameborder="0" src="https://www.google.com/maps/d/embed?mid=1G4K0f0SJ9_93ZypAUIzE-6sRulHcWq4&ehbc=2E312F"></iframe></div>
 </body>
 </html>
